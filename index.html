@@ -1,97 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TLJ | About Me</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <title>Music Portfolio - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body data-page="about">
-  <div class="layout">
-    <div id="sidebar-slot"></div>
 
-    <main class="content">
-      <div class="topbar">
-        <button class="menu-btn" id="menuBtn">☰</button>
-        <h1>Echo Bloom</h1>
+<div class="layout">
+  <!-- Sidebar -->
+  <div id="sidebar-slot"></div>
+
+  <!-- Content -->
+  <main class="content">
+
+    <!-- Mobile Topbar -->
+    <div class="topbar">
+      <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+      <strong>Home</strong>
+    </div>
+
+    <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid hero-home">
+
+      <div class="hero-left">
+        <div class="eyebrow">Sound Designer · Music Producer</div>
+
+        <h1>TLJ</h1>
+
+        <div class="hero-portrait">
+          <img src="image/anya(2).jpg" alt="TLJ portrait">
+        </div>
       </div>
 
-      <section class="hero">
-        <div class="hero-grid">
-          <div class="player-card">
-            <div class="album-art">
-              <img src="images/anya(2).jpg" alt="Artist photo">
-              
-              <div class="track-meta">
-                <small>Artist profile</small>
-                <h3>Music with mood</h3>
-                <p>Clean, modern, and inspired by Spotify style.</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="eyebrow">● Musician · Singer · Performer</div>
-            <h1>About Me</h1>
-            <p>
-              Hi, I am TLJ. I create music with a mix of indie pop, R&B, and acoustic vibes.
-              My songs focus on emotion, storytelling, and live performance energy.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="portfolio.html">See portfolio</a>
-              <a class="btn btn-ghost" href="video.html">Watch video</a>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="hero-right">
+        <div class="hero-bio">
+          <div class="hero-bio__kicker">About the artist</div>
+          <h2>Music with mood</h2>
 
-      <section class="section">
-        <div class="section-head">
-          <div>
-            <h2>Short bio</h2>
-            <p>Use this for your friend’s biography, influences, and music style.</p>
-          </div>
-        </div>
+          <p class="hero-bio__text">
+            Passionate musician creating emotional and modern sound experiences.
+            Inspired by Spotify-style aesthetics and clean UI.
+          </p>
 
-        <div class="split">
-          <div class="bio-box">
-            <p>
-              I perform original songs and acoustic covers. My style is soft, emotional, and
-              designed to connect with listeners through melody and lyrics.
-            </p>
-            <p>
-              I am available for live shows, collaborations, studio sessions, and private events.
-            </p>
+          <div class="skills">
+            <span>Sound Designer</span>
+            <span>Foley</span>
+            <span>Music Producer</span>
+            <span>Mixing</span>
+            <span>Mastering</span>
           </div>
 
-          <div class="show-box">
-            <h3>Quick facts</h3>
-            <div class="list">
-              <div class="list-item">
-                <div>
-                  <strong>Genre</strong>
-                  <span>Indie Pop / R&B / Acoustic</span>
-                </div>
-              </div>
-              <div class="list-item">
-                <div>
-                  <strong>Base</strong>
-                  <span>Malaysia</span>
-                </div>
-              </div>
-              <div class="list-item">
-                <div>
-                  <strong>Available for</strong>
-                  <span>Gigs, collabs, sessions</span>
-                </div>
-              </div>
-            </div>
+          <div class="hero-actions">
+            <a href="portfolio.html" class="btn btn-primary">View Portfolio</a>
+            <a href="video.html" class="btn btn-ghost">Watch Video</a>
           </div>
         </div>
-      </section>
-    </main>
-  </div>
-  <div class="mobile-overlay" id="overlay"></div>
-  <div id="footer-slot"></div>
-  <script src="js/script.js"></script>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section">
+      <div class="section-head">
+        <div>
+          <h2>About Me</h2>
+          <p>Short introduction about the artist</p>
+        </div>
+      </div>
+
+      <div class="split">
+        <div class="bio-box">
+          <p>
+            I am a passionate musician focusing on modern sound design,
+            music production, and emotional storytelling through music.
+          </p>
+        </div>
+
+        <div class="show-box">
+          <p>
+            Performing live shows, studio recordings, and collaborations
+            across different music genres.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- Footer -->
+<div id="footer-slot"></div>
+
+<!-- Mobile Overlay -->
+<div class="mobile-overlay" onclick="toggleSidebar()"></div>
+
+<script src="js/script.js"></script>
 </body>
 </html>

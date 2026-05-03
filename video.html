@@ -1,89 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TLJ | Video</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8">
+  <title>Music Portfolio - Video</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/video.css">
 </head>
 <body data-page="video">
-  <div class="layout">
-    <div id="sidebar-slot"></div>
 
-    <main class="content">
-      <div class="topbar">
-        <button class="menu-btn" id="menuBtn">☰</button>
-        <h1>Video</h1>
+<div class="layout">
+  <div id="sidebar-slot"></div>
+
+  <main class="content">
+
+    <div class="topbar">
+      <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+      <strong>Video</strong>
+    </div>
+
+    <section class="section video-section">
+      <div class="section-head">
+        <div>
+          <h2>Music Video</h2>
+          <p>Watch latest performance or music video</p>
+        </div>
       </div>
 
-      <section class="section">
-        <div class="section-head">
-          <div>
-            <h2>Music video</h2>
-            <p>Replace the embed link with YouTube or Google Drive preview.</p>
-          </div>
-        </div>
+      <div class="video-wrap">
 
         <div class="video-frame">
           <iframe
             src="https://www.youtube.com/embed/dQw4w9WgXcQ"
             title="Music video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
           </iframe>
         </div>
-      </section>
 
-      <section class="section video-section">
-        <div class="section-head">
-          <div>
-            <h2>Music video</h2>
-            <p>Replace the embed link with YouTube or Google Drive preview.</p>
-          </div>
-        </div>
-        <div class="video-wrap">
-          <div class="video-frame">
-            <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Music video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </div>
         <div class="video-description">
-            <h3>Midnight Echo — Official Music Video</h3>
-            <p>
-              A soft and dreamy performance video that matches the song’s emotional mood.
-              Perfect for introducing the artist’s style, visuals, and atmosphere.
-            </p>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-head">
-          <div>
-            <h2>More clips</h2>
-            <p>Add live clips, behind-the-scenes, or teaser videos here.</p>
-          </div>
+          <h3>Latest Release</h3>
+          <p>
+            This video showcases the latest music release with a modern
+            cinematic visual style and emotional storytelling.
+          </p>
         </div>
 
-        <div class="split">
-          <div class="bio-box">
-            <h3>Clip ideas</h3>
-            <p>Official MV, live session, acoustic cover, backstage clip.</p>
-          </div>
-          <div class="show-box">
-            <h3>Upload tips</h3>
-            <p>Use YouTube for best playback. Use Google Drive only if you want simple private sharing.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-  </div>
+      </div>
 
-  <div class="mobile-overlay" id="overlay"></div>
-  <div id="footer-slot"></div>
-  <script src="js/script.js"></script>
+    </section>
+
+  </main>
+</div>
+
+<div id="footer-slot"></div>
+<div class="mobile-overlay" onclick="toggleSidebar()"></div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
