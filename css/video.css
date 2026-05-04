@@ -41,3 +41,46 @@
   color: var(--muted);
   line-height: 1.7;
 }
+
+/* 2 video layout */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* each video block */
+.video-item {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* light theme description */
+.video-description.light {
+  background: #F5F2F0; /* your requirement */
+  border: 1px solid rgba(18,18,18,0.08);
+  border-radius: 16px;
+  padding: 16px 18px;
+}
+
+/* darker title */
+.video-description.light h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #000; /* darker */
+}
+
+/* normal text */
+.video-description.light p {
+  margin: 0;
+  color: #333; /* softer black */
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .video-grid {
+    grid-template-columns: 1fr;
+  }
+}
