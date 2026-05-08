@@ -1,7 +1,7 @@
 .hero-home {
   display: grid;
   grid-template-columns: 30% 70%;
-  gap: 16px;
+  gap: 10px;
   align-items: stretch;
 }
 
@@ -10,20 +10,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
-}
-
-.hero-left .eyebrow {
-  align-self: flex-start;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(193, 72, 11, 0.08);
-  color: var(--primary);
-  border: 1px solid rgba(193, 72, 11, 0.16);
-  font-size: 0.9rem;
-  margin-bottom: 0;
 }
 
 .hero-left h1 {
@@ -78,14 +64,6 @@
   margin-bottom: 12px;
 }
 
-.hero-bio h2 {
-  margin: 0 0 14px;
-  font-family: var(--font-display);
-  font-size: clamp(1.7rem, 3vw, 2.5rem);
-  line-height: 1.05;
-  color: var(--foreground);
-}
-
 .hero-bio__text {
   margin: 0 0 18px;
   color: var(--secondary-foreground);
@@ -112,24 +90,8 @@
   border-radius: 999px;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 0;
-}
-
 .gallery-section {
   padding: 3rem 0 5rem;
-}
-
-.section-label {
-  margin-bottom: 1.2rem;
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--muted);
 }
 
 .gallery {
@@ -154,39 +116,19 @@
   border: 1px solid var(--border);
   background: #ddd;
   aspect-ratio: 4 / 5;
-  margin: 6px;
 }
 
 .gallery-image-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, filter 0.4s ease;
   filter: grayscale(100%);
 }
 
-/* hover effect */
 .gallery-item:hover img {
   transform: scale(1.05);
   filter: grayscale(0%);
-}
-
-.gallery-caption {
-  font-size: 0.85rem;
-  color: var(--secondary-foreground);
-}
-
-.gallery-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: grayscale(100%);
-  transition: transform 0.5s ease, filter 0.5s ease;
-}
-
-.gallery-item:hover .gallery-image {
-  filter: grayscale(0%);
-  transform: scale(1.05);
 }
 
 .gallery-caption {
